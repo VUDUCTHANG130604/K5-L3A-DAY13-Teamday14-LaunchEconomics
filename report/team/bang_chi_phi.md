@@ -10,7 +10,7 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 | Số lần chạy trung bình, chạy đến khi đúng | ... |
 | Hệ số chi phí mỗi việc thành công, tối đa 3 lần | ... |
 
-##A2 . Mô hìn chi phí từ trace 
+##A2 . Mô hình chi phí từ trace 
 | Khoản | Số tiền (đ) | Nguồn | Nhãn |
 | --- | ---: | --- | --- |
 | Token | 245.585 | `logix_runs.csv` | đo từ trace |

@@ -2,8 +2,9 @@
 
 Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo bằng chứng trong hồ sơ, không theo cách trình bày: một đề xuất No-go có lý do bằng số được điểm cao hơn một đề xuất Go bỏ qua con số bất lợi.
 
-- Nhóm chấm (hội đồng): ...
-- Nhóm được chấm: ...
+- Nhóm chấm (hội đồng): Teamday14, L3A
+- Nhóm được chấm: Chờ phân công và hồ sơ của đội trình.
+- Trạng thái: Chờ buổi duyệt chéo. Điểm và quyết định do hội đồng ghi sau khi xem bằng chứng.
 
 | Tiêu chí | 0 điểm | 5 điểm | 10 điểm | Điểm | Lý do (có số) |
 | --- | --- | --- | --- | ---: | --- |
@@ -16,6 +17,6 @@ Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo b
 
 **Lý do:** ...
 
-**Một câu hỏi cho đội trình:** ...
+**Câu hỏi dự kiến cho đội trình.** Khi chi phí xem lại tăng vượt ngưỡng, ai có quyền dừng pilot và team kiểm tra bằng event nào?
 
 **Câu trả lời của đội trình (ghi lại tại buổi):** ...

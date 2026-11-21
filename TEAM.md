@@ -5,7 +5,7 @@
 - Tên nhóm: Teamday14
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-Teamday14-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt:
+- Repo nhóm trên GitHub: [Teamday14](https://github.com/VUDUCTHANG130604/K5-L3A-DAY13-Teamday14-LaunchEconomics), nhánh nộp `main`. Commit chốt sẽ ghi khi nhóm nộp.
 
 ## Thành viên
 

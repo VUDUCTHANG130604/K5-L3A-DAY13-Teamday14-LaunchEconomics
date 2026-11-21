@@ -4,7 +4,7 @@
 
 ## Bảng đối chiếu nhãn
 
-Người gắn nhãn 1: Bùi Mạnh Linh · Người gắn nhãn 2: Vũ Đức Thắng (gắn riêng, không trao đổi trước khi so)
+Người gắn nhãn 1: Bùi Mạnh Linh · Người gắn nhãn 2: Vũ Đức Thắng (đối chiếu có AI hỗ trợ)
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
@@ -29,13 +29,15 @@ Người gắn nhãn 1: Bùi Mạnh Linh · Người gắn nhãn 2: Vũ Đức T
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** 17 / 20 = 85% (đạt ngưỡng 80%, không cần viết lại định nghĩa). Ba ca không trùng: **8, 13, 17**.
+**Tỉ lệ trùng giữa hai cột:** 17 / 20 = 85%. Ba ca không trùng: **8, 13, 17**.
 
-Cách gắn nhãn: cả hai người đều dùng AI hỗ trợ (người 1 dùng Claude, người 2 dùng ChatGPT), đã ghi rõ ở báo cáo cá nhân. Đối chiếu nhãn thống nhất với bảng tham khảo trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md`: khớp 20/20.
+Theo hai báo cáo cá nhân, Claude đã thấy bảng tham khảo và ChatGPT đã thấy bộ nhãn người 1. Ba ca lệch được chọn trong bước soạn bảng đối chiếu. Số 85% mô tả bảng hiện tại. Điều kiện hai người gắn nhãn độc lập của CP3 còn thiếu bằng chứng. Đối chiếu nhãn thống nhất với bảng tham khảo trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md`: khớp 20/20.
 
-## Căn cứ gắn nhãn từng ca
+## Đối chiếu với nhãn đề xuất của AI
 
-Căn cứ theo mô tả trong phần “Hai mươi ca lỗi”. Ba ca lệch (8, 13, 17) do hai người diễn giải khác nhau về nguyên nhân gốc hoặc về việc lỗi đã lộ ra hay chưa. [Đề bài Lab 13](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx)
+### Căn cứ gắn nhãn từng ca
+
+Căn cứ theo mô tả trong phần “Hai mươi ca lỗi”. Ba ca lệch (8, 13, 17) thể hiện hai cách diễn giải khác nhau về nguyên nhân gốc hoặc về việc lỗi đã lộ ra hay chưa. [Đề bài Lab 13](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx)
 
 | Ca | Căn cứ gắn nhãn |
 | --: | --- |

@@ -26,8 +26,8 @@
 - Dữ liệu đầu vào đã đối chiếu **1.200 dòng yêu cầu, 1.624 dòng lượt chạy và 6 depot phân biệt** trong hai file CSV. Mốc nhân viên tự làm là **12.000 đ/yêu cầu** theo giả định của lab (6 phút × 2.000 đ). [Dữ liệu và công thức](../../docs/du_lieu_va_cong_thuc.md)
 - **Chi phí (`simulated`).** Mô hình cho **4.472 đ/việc thành công** và **5.865 đ/yêu cầu** khi cộng phần 222 ca nhân viên làm thay. Chi phí làm lại chiếm **51,8%** tổng chi phí. Ở phạm vi `noi_dia` và `hang_nang`, chi phí gồm cố định tăng từ **4.599** lên **5.784 đ/việc thành công** khi khối lượng giảm một nửa. [Bảng chi phí A2](bang_chi_phi.md), [kết quả từ mã A–B](../../src/lab13.py)
 - **Chỉ số chạy thử.** Đóng trong 24 giờ và không mở lại trong 7 ngày **82,83%**, bỏ qua gợi ý **27,12%** trong số ca được xem lại, mở lại trong 7 ngày **4,25%**. [Kết quả E1](../../src/lab13.py)
-- **Lỗi và khắc phục.** Hai bộ nhãn trùng **17/20 ca (85%)**, đạt ngưỡng 80%. Bảng lỗi có quy tắc phân biệt cho ba ca lệch **8, 13 và 17**; nhãn thống nhất khớp bảng tham khảo 20/20. Ca 20 cần khóa chống trùng ở bước ghi sổ cái để tránh hoàn hai lần. [Bảng lỗi](bang_loi.md)
-- **Đề xuất dự thảo No-go ở vòng này.** Phạm vi để trình lại là `noi_dia` và `hang_nang`. Phương án chia theo yêu cầu cần **1.251 yêu cầu/nhánh** để phát hiện chênh 5 điểm %. Nhóm cần chốt phương án chia, điền đủ 3 luật dừng và xác nhận đặc tả ít nhất 6 event có `trace_id`. [Hồ sơ launch v0](ho_so_launch_v0.md)
+- **Lỗi và khắc phục.** Hai cột có AI hỗ trợ trùng **17/20 ca (85%)**. Tính độc lập bị hạn chế theo báo cáo cá nhân. Bảng lỗi có quy tắc phân biệt cho ba ca lệch **8, 13 và 17**; nhãn thống nhất khớp bảng tham khảo 20/20. Ca 20 cần khóa chống trùng ở bước ghi sổ cái để tránh hoàn hai lần. [Bảng lỗi](bang_loi.md)
+- **Đề xuất dự thảo No-go ở vòng này.** Phạm vi để trình lại là `noi_dia` và `hang_nang`. Kế hoạch chia **20 nhân viên/nhánh**, cần 299 yêu cầu/người để phát hiện chênh 6 điểm phần trăm. Có 4 luật dừng và 9 event. Trình lại sau kiểm thử an toàn, xác nhận đo thời gian thực và chấp thuận mức power 0,64 nếu tác động thật chỉ +5 điểm. [Hồ sơ launch v0](ho_so_launch_v0.md)
 - Phản hồi duyệt chéo của hội đồng đối với Teamday14 sẽ được bổ sung sau buổi duyệt.
 
 ## 5. Khó khăn và cách xử lý
@@ -37,7 +37,7 @@
 
 ## 6. Tổng hợp đóng góp
 
-- Vai người 4 gồm gắn nhãn độc lập ở CP3, giữ hồ sơ launch và tổng hợp báo cáo nhóm. Các đóng góp đã thực hiện và bằng chứng được cập nhật theo từng thành viên. [Thông tin nhóm](../../TEAM.md)
+- Lịch sử Git ghi nhận phần code ở `785090b`, bảng chi phí ở `7069b2b` và `bfad1ef`, bộ nhãn 1 ở `34ee7b4`, hồ sơ tổng hợp và cột nhãn 2 ở `10368f4`. [Thông tin nhóm](../../TEAM.md)
 
 ## 7. Hạn chế và hướng cải thiện
 

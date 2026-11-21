@@ -1,51 +1,55 @@
-# Lab 13 · Nhiệm vụ D · Kế hoạch pilot trợ lý hoàn phí LogiX-VN (Gate 2a)
-# Điền mọi chỗ có dấu hỏi. Khi nộp, ngoài các dòng chú thích không còn dấu hỏi nào.
-# Kiểm tra đọc được: python -c "import yaml; yaml.safe_load(open('../report/team/pilot_plan.yaml'))"
-#
-# D1 · Cỡ mẫu (baseline 0,70; mục tiêu +5 điểm; alpha 0,05; power 0,8; ICC 0,02)
-#   a) Chia theo yêu cầu:
-#   b) Theo nhân viên, m = 75:
-#   c) 20 nhân viên mỗi nhóm:
-#   d) 6 depot mỗi nhóm:
-#   e) Mức chênh 6 điểm (859 mỗi nhóm), 20 nhân viên mỗi nhóm:
-#
-# D2 · Năm câu kiểm tra "tách được tác động" với cách chia đã chọn (mỗi câu một dòng):
-#   1. Đối chứng chạy cùng thời gian:
-#   2. Chia ngẫu nhiên hay do người chọn:
-#   3. Ảnh hưởng gián tiếp và cách giảm:
-#   4. Chỉ số chính, ngưỡng, ngày quyết định đã viết trước:
-#   5. Ít nhất 20 cụm mỗi nhóm:
-#
-# Đánh đổi đã chấp nhận (nếu cách chia chưa đạt cả hai điều kiện):
-#
-# Tỉ lệ mo_lai_trong_7_ngay hiện tại và ngưỡng an toàn đã chọn:
+# Pilot LogiX-VN · Thiết kế đề xuất trình Gate 2a
+# D1 · Baseline thiết kế 0,70, alpha hai phía 0,05, power 0,80, ICC 0,02.
+# a) Chia từng yêu cầu: chênh 5 điểm phần trăm cần 1.251 yêu cầu độc lập mỗi nhánh.
+# b) Theo nhân viên, 75 yêu cầu/người: DE = 1 + 74 × 0,02 = 2,48.
+#    Cần 3.103 yêu cầu và 42 nhân viên/nhánh, vượt tổng nguồn lực 40 người.
+# c) 20 nhân viên/nhánh: cỡ mẫu hiệu dụng bị chặn trên bởi 20 / 0,02 = 1.000.
+# d) 6 depot/nhánh: trần 6 / 0,02 = 300, chỉ có 6 cụm/nhánh.
+# e) Chênh 6 điểm: cần 859 quan sát độc lập tương đương/nhánh.
+#    Với 20 người × 299 yêu cầu = 5.980 yêu cầu/nhánh, DE = 6,96; n hiệu dụng ≈ 859,2.
+# D2 · (1) Đối chứng làm thủ công cùng depot, loại yêu cầu và ngày lịch.
+# (2) Chia 40 nhân viên thành 20 + 20 trước khi mở quyền, cân bằng theo depot và khối lượng nền.
+# (3) Quyền theo tài khoản, cấm chia sẻ gợi ý chéo nhánh, kiểm tra log theo staff_id và arm.
+# (4) Khóa chỉ số, ngưỡng, quy tắc dừng và ngày đọc kết quả trước ngày mở quyền.
+# (5) Mỗi nhánh có 20 cụm nhân viên. Nếu tác động thật là +5 điểm, power chỉ khoảng 0,64.
+# Mở lại trong 7 ngày: toàn mẫu 51/1.200 = 4,25%; riêng nội địa và hàng nặng là 3,97%.
 
 pilot:
-  owner: "?"                      # một người có tên vai trò, không ghi "cả đội"
-  scope: "?"                      # loại yêu cầu nào, depot nào; dựa vào kết quả A3
+  owner: "Giám đốc vận hành LogiX-VN"
+  scope: "Yêu cầu noi_dia hoặc hang_nang tại 12 depot, do 40 nhân viên tham gia xử lý."
   assignment:
-    unit: "?"                     # request | staff | depot
+    unit: staff
     control_share: 0.5
     randomized: true
-  rollout: [0.10, 0.25, 0.50]     # mỗi bước một tuần
+    method: "Cố định danh sách trước phân bổ. Bốc thăm với seed 1314 trong tầng depot, cân bằng khối lượng nền và ràng buộc tổng 20 người mỗi nhánh."
+  rollout: [0.10, 0.25, 0.50]
+  schedule:
+    start_date: "2026-11-30"
+    ramp: "Tuần 1 mở cho 4/40 người, tuần 2 cho 10/40 người. Từ 14/12 mở cho toàn bộ 20 nhân viên đã phân vào nhánh can thiệp."
+    enrollment: "14/12/2026–03/01/2027. Phân tích theo nhóm được phân ban đầu, gồm cả yêu cầu đủ điều kiện mà nhân viên bỏ qua trợ lý."
+    follow_up: "Theo dõi đủ 7 ngày sau khi đóng để tính mở lại. Đọc kết quả sau khi toàn bộ yêu cầu có đủ cửa sổ quan sát."
   primary_metric:
     name: dong_trong_24h_khong_mo_lai_7_ngay
     baseline: 0.70
-    mde: 0.05
+    mde: 0.06
     alpha: 0.05
     power: 0.80
-    n_per_arm: "?"
-    design_effect: "?"            # 1 nếu chia theo yêu cầu
-    clusters_per_arm: "?"         # để trống nếu chia theo yêu cầu
+    n_per_arm: 859
+    design_effect: 6.96
+    clusters_per_arm: 20
+    requests_per_cluster: 299
+    planned_requests_per_arm: 5980
   identifiability:
-    concurrent_control: "?"
-    spillover_risk: "?"
-    predeclared: "?"
+    concurrent_control: "20 nhân viên đối chứng tiếp tục luồng thủ công cùng thời gian."
+    spillover_risk: "Giới hạn quyền theo staff_id, ghi mọi lượt mở gợi ý và điều tra mọi lượt xuất hiện ở nhánh đối chứng."
+    predeclared: "So chênh lệch tỉ lệ giữa hai nhánh theo phân bổ ban đầu, với khoảng tin cậy 95% hiệu chỉnh cụm nhân viên và phân tầng theo depot."
   stop_rules:
-    - "NẾU ? TRONG ? THÌ ? KHÔNG THÌ ?"
-    - "NẾU ? TRONG ? THÌ ? KHÔNG THÌ ?"
-    - "NẾU ? TRONG ? THÌ ? KHÔNG THÌ ?"
-  interim_looks: "chỉ kiểm tra chỉ số an toàn"
-  rollback: "?"                   # ai bấm, mất bao lâu, khách được phục vụ bằng gì
-  decision_date: "?"
-  simulated_inputs: ["?"]         # liệt kê mọi con số giả lập đã dùng
+    - "NẾU có ít nhất một đơn ghi hoàn trùng TRONG bất kỳ lần đối soát sổ cái hằng giờ nào THÌ Giám đốc vận hành tắt trợ lý ngay và đối soát các đơn liên quan KHÔNG THÌ không bỏ lượt đối soát hằng giờ tiếp theo."
+    - "NẾU tỉ lệ mở lại 7 ngày vượt 6% hoặc cao hơn đối chứng ít nhất 2 điểm phần trăm TRONG 3 ngày kiểm tra liên tiếp trên các đoàn hệ đã quan sát đủ 7 ngày THÌ Giám đốc vận hành dừng pilot trong 30 phút KHÔNG THÌ không tăng mức triển khai trước mốc đã định."
+    - "NẾU chi phí hệ thống trên mỗi yêu cầu đủ điều kiện, gồm xử lý thủ công và cố định phân bổ, vượt 12.000 đ TRONG 2 tuần liên tiếp THÌ PM yêu cầu Giám đốc vận hành dừng pilot và rà phút xem lại, làm lại KHÔNG THÌ không mở rộng vượt phạm vi đã duyệt."
+    - "NẾU tỉ lệ sửa hoặc bỏ gợi ý vượt 40% TRONG một tuần có quyết định xem lại THÌ trưởng CSKH giữ nguyên mức triển khai và rà nguyên nhân trước lần tăng tiếp theo KHÔNG THÌ không tăng mức triển khai nếu luật an toàn hoặc chi phí đang kích hoạt."
+  interim_looks: "Chỉ theo dõi an toàn và các ngưỡng vận hành đã định trước. Kiểm định hiệu quả một lần tại ngày quyết định."
+  rollback: "Giám đốc vận hành tắt cờ tính năng trong 30 phút. CSKH nhận lại hàng đợi và kiểm tra sổ cái trước khi xử lý lệnh còn mở."
+  decision_date: "2027-01-13"
+  decision_rule: "Đề xuất mở rộng nếu đủ mẫu và theo dõi, chênh lệch quan sát ít nhất +5 điểm phần trăm, cận dưới khoảng tin cậy trên 0, chi phí hệ thống dưới 12.000 đ/yêu cầu và mọi điều kiện dừng đã được xử lý. Thiếu mẫu hoặc bằng chứng thì giữ phạm vi hiện tại và trình lại."
+  simulated_inputs: ["phut_xem_lai_simulated", "phut_lam_lai_simulated"]

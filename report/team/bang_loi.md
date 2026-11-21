@@ -2,40 +2,69 @@
 
 20 ca lỗi nằm trong `docs/Ngay13_Lab13_De_bai_hoc_vien.docx`. Năm loại theo Google PAIR: **Do người dùng · Hệ thống · Ngữ cảnh · Giới hạn hệ thống · Ngầm**. Gắn nhãn theo nguyên nhân gốc, không theo chỗ cần sửa.
 
-## Hai bộ nhãn độc lập
+## Bảng đối chiếu nhãn
 
-Người gắn nhãn 1: ... · Người gắn nhãn 2: ... (gắn trong 8 phút, không trao đổi)
+Người gắn nhãn 1: ... · Người gắn nhãn 2: Vũ Đức Thắng.
 
-| Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
+| Ca | Nhãn người 1 | Nhãn người 2 (AI đề xuất) | Trùng? | Nhãn thống nhất (dự thảo) |
 | --: | --- | --- | --- | --- |
-| 1 | Do người dùng | ... | ... | ... |
-| 2 | Hệ thống | ... | ... | ... |
-| 3 | Ngữ cảnh | ... | ... | ... |
-| 4 | Giới hạn hệ thống | ... | ... | ... |
-| 5 | Ngầm | ... | ... | ... |
-| 6 | Do người dùng | ... | ... | ... |
-| 7 | Hệ thống | ... | ... | ... |
-| 8 | Hệ thống | ... | ... | ... |
-| 9 | Do người dùng | ... | ... | ... |
-| 10 | Ngữ cảnh | ... | ... | ... |
-| 11 | Giới hạn hệ thống | ... | ... | ... |
-| 12 | Ngầm | ... | ... | ... |
-| 13 | Giới hạn hệ thống | ... | ... | ... |
-| 14 | Do người dùng | ... | ... | ... |
-| 15 | Hệ thống | ... | ... | ... |
-| 16 | Ngữ cảnh | ... | ... | ... |
-| 17 | Ngầm | ... | ... | ... |
-| 18 | Ngữ cảnh | ... | ... | ... |
-| 19 | Giới hạn hệ thống | ... | ... | ... |
-| 20 | Hệ thống | ... | ... | ... |
+| 1 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 2 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 5 | Ngầm | Ngầm | Có | Ngầm |
+| 6 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 7 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 8 | Hệ thống | Ngầm | Không | Hệ thống |
+| 9 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 12 | Ngầm | Ngầm | Có | Ngầm |
+| 13 | Giới hạn hệ thống | Hệ thống | Không | Giới hạn hệ thống |
+| 14 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 15 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 17 | Ngầm | Hệ thống | Không | Ngầm |
+| 18 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** ... / 20 = ...%
+**Kết quả đối chiếu tham khảo:** Lệch ba ca **8, 13 và 17**. Số ca trùng là **17/20** ((20 − 3) ÷ 20 × 100% = **85%**). Tỉ lệ đồng thuận chính thức của CP3 cần hai bộ nhãn do hai thành viên tự thực hiện.
+
+## Đối chiếu với nhãn đề xuất của AI
+
+AI đề xuất cách phân loại theo mô tả trong phần “Hai mươi ca lỗi”. Ba ca lệch dùng cách diễn giải khác về nguyên nhân hoặc khả năng phát hiện lỗi. [Đề bài Lab 13](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx)
+
+| Ca | Căn cứ gắn nhãn |
+| --: | --- |
+| 1 | Khách nhập số tài khoản thiếu hai chữ số, dẫn tới lệnh hoàn bị ngân hàng từ chối. |
+| 2 | Trợ lý truyền tham số hàng thường cho kiện 28 kg nên tra sai bảng giá. |
+| 3 | Hoàn về ví đúng thiết kế, trong khi khách chờ tiền vào tài khoản ngân hàng. |
+| 4 | LogiX thiếu dữ liệu chặng giao do hãng nước ngoài thực hiện. |
+| 5 | Kiểm tra mẫu mới phát hiện hoàn thừa theo giá trước giảm, dù khách và hệ thống đều không báo. |
+| 6 | Khách chọn luồng giao trễ dù vấn đề thực tế là hàng bị vỡ. |
+| 7 | Trợ lý báo hoàn thành dù API sổ cái thất bại và lệnh chưa được ghi. |
+| 8 | Số tiền hoàn đúng, nên điều khoản bịa có thể lọt qua nếu chỉ kiểm số tiền. |
+| 9 | Khách nhập mã đơn của sàn vào trường yêu cầu mã vận đơn. |
+| 10 | Từ chối hoàn đúng điều khoản bất khả kháng, trong khi cam kết 24 giờ tạo kỳ vọng khác. |
+| 11 | Trợ lý chưa hỗ trợ đầu vào bằng âm thanh. |
+| 12 | Kết quả trả lời vẫn đúng nhưng các lần gọi tool thừa làm chi phí token tăng suốt ba tuần. |
+| 13 | Trợ lý trả lời chung về phí vận chuyển và bỏ sót việc thông báo rằng yêu cầu hoàn phí bảo hiểm nằm ngoài phạm vi. |
+| 14 | Khách bấm xác nhận đã nhận tiền trước khi tiền về. |
+| 15 | Trợ lý tính hoàn 100% thay vì mức 50% theo chính sách. Nhân viên phát hiện trước khi gửi. |
+| 16 | Thông báo gửi ngay đúng thiết kế nhưng đến lúc 2:14 sáng, gây phiền cho khách. |
+| 17 | Bộ nhớ đệm dùng bản giá cũ sau ngày đổi giá, khiến số tiền hoàn trên 212 đơn sai. |
+| 18 | Khoản hoàn đúng nhưng thiếu cách tính khiến khách hiểu số tiền được hoàn là thấp. |
+| 19 | Đơn 14 tháng tuổi nằm ngoài phạm vi 12 tháng dữ liệu có thể truy cập. |
+| 20 | Lệnh thứ hai thiếu khóa chống trùng, dẫn tới hai khoản hoàn cho cùng một đơn. |
 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-- ...
+- **Ca 8** xếp vào **Hệ thống** vì việc viện dẫn điều khoản không tồn tại là lỗi trong câu trả lời dù số tiền hoàn đúng.
+- **Ca 13** xếp vào **Giới hạn hệ thống** vì yêu cầu hoàn phí bảo hiểm của đối tác nằm ngoài phạm vi xử lý của trợ lý.
+- **Ca 17** xếp vào **Ngầm** vì sai lệch nhỏ do dùng bảng giá cũ kéo dài trên 212 đơn trong 9 ngày mà không có ca nào mở lại.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 

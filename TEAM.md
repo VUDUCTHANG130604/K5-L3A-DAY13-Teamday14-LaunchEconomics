@@ -12,7 +12,7 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
+|   2 |   Nguyễn Thị Hải Yến     |    2A202603567  |       |        | Kiểm số , cỡ mẫu và chỉ số         |
 |   3 | Bùi Mạnh Linh | 2A202603539 |       |        | Người gắn nhãn 1 |
 |   4 | Vũ Đức Thắng | 2A202603601 |       |        | Người gắn nhãn 2 kiêm giữ hồ sơ |
 

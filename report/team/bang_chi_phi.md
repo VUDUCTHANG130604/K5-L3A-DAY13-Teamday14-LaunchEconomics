@@ -40,7 +40,7 @@ Trong A3–B4, các giá trị chi phí có tính thời gian nhân viên và c�
 | quoc_te | 150 | 27,3% | 2,32 | 22.515 | 1,88× |
 | doi_tac | 68 | 54,4% | 1,88 | 10.215 | 0,85× |
 
-- Loại nào không đáng để trợ lý xử lý? Với loại đó, cho chạy lại tới 3 lần có giúp không? Quốc tế tốn 22.515 đ/việc (simulated). Tỉ lệ chạy OK ở lần thứ ba chỉ 2,2%.
+- Loại nào không đáng để trợ lý xử lý? Với loại đó, cho chạy lại tới 3 lần có giúp không? Quốc tế tốn 22.515 đ/việc (simulated). Tỉ lệ chạy OK lần lượt là 30,0%, 11,4% và 2,2% qua ba lần thử. Với đối tác, các lần 2–3 đạt 18,2% và 14,8%.
 
 ## A4 · Chi phí cố định (phạm vi noi_dia + hang_nang)
 
@@ -51,7 +51,7 @@ Trong mẫu có 900 việc thành công thuộc phạm vi trên 1.200 yêu cầu
 | 45.000 yêu cầu/tháng | 33.750 | 1.185 | 4.599 | 0,38× |
 | Một nửa khối lượng | 16.875 | 2.370 | 5.784 | 0,48× |
 
-- Chi phí cố định có đổi kết luận không? Ở khối lượng nào? Ở cả hai mức khối lượng, chi phí đã cộng cố định trên mỗi việc thành công vẫn dưới mốc 12.000 đ (simulated).
+- Chi phí cố định có đổi kết luận không? Ở khối lượng nào? Ở cả hai mức khối lượng, chi phí đã cộng cố định trên mỗi việc thành công vẫn dưới mốc 12.000 đ (simulated). Với biến phí khoảng 3.414 đ/việc, cần khoảng 4.660 việc thành công/tháng để hòa vốn.
 
 ## B1 · Đổi từng yếu tố
 
@@ -80,7 +80,7 @@ Trong mẫu có 900 việc thành công thuộc phạm vi trên 1.200 yêu cầu
 | 2 lần | 4.093.220 | 234 | 6.901.220 | 4.237 |
 | 3 lần | 4.373.585 | 222 | 7.037.585 | 4.472 |
 
-- Giới hạn nào rẻ nhất cho công ty? Có trùng với giới hạn cho chi phí mỗi việc thành công thấp nhất không? Tối đa 2 lần cho tổng chi phí hệ thống thấp nhất (6.901.220 đ). Giới hạn 1 lần cho chi phí mỗi việc thành công thấp nhất (4.111 đ), nhưng phải xử lý thủ công 319 yêu cầu (simulated).
+- Giới hạn nào rẻ nhất cho công ty? Có trùng với giới hạn cho chi phí mỗi việc thành công thấp nhất không? Tối đa 2 lần cho tổng chi phí hệ thống thấp nhất (6.901.220 đ). Giới hạn 1 lần cho chi phí mỗi việc thành công thấp nhất (4.111 đ), nhưng phải xử lý thủ công 319 yêu cầu và tốn thêm 548.561 đ so với giới hạn 2 lần (simulated).
 
 ## B4 · Nếu phải xem lại tất cả
 

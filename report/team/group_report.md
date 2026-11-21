@@ -27,7 +27,7 @@
 - **Chi phí (`simulated`).** Mô hình cho **4.472 đ/việc thành công** và **5.865 đ/yêu cầu** khi cộng phần 222 ca nhân viên làm thay. Chi phí làm lại chiếm **51,8%** tổng chi phí. Ở phạm vi `noi_dia` và `hang_nang`, chi phí gồm cố định tăng từ **4.599** lên **5.784 đ/việc thành công** khi khối lượng giảm một nửa. [Bảng chi phí A2](bang_chi_phi.md), [kết quả từ mã A–B](../../src/lab13.py)
 - **Chỉ số chạy thử.** Đóng trong 24 giờ và không mở lại trong 7 ngày **82,83%**, bỏ qua gợi ý **27,12%** trong số ca được xem lại, mở lại trong 7 ngày **4,25%**. [Kết quả E1](../../src/lab13.py)
 - **Lỗi và khắc phục.** Hai cột có AI hỗ trợ trùng **17/20 ca (85%)**. Tính độc lập bị hạn chế theo báo cáo cá nhân. Bảng lỗi có quy tắc phân biệt cho ba ca lệch **8, 13 và 17**; nhãn thống nhất khớp bảng tham khảo 20/20. Ca 20 cần khóa chống trùng ở bước ghi sổ cái để tránh hoàn hai lần. [Bảng lỗi](bang_loi.md)
-- **Đề xuất dự thảo No-go ở vòng này.** Phạm vi để trình lại là `noi_dia` và `hang_nang`. Kế hoạch chia **20 nhân viên/nhánh**, cần 299 yêu cầu/người để phát hiện chênh 6 điểm phần trăm. Có 4 luật dừng và 9 event. Trình lại sau kiểm thử an toàn, xác nhận đo thời gian thực và chấp thuận mức power 0,64 nếu tác động thật chỉ +5 điểm. [Hồ sơ launch v0](ho_so_launch_v0.md)
+- **Đề xuất dự thảo No-go ở vòng này.** Phạm vi để trình lại là `noi_dia` và `hang_nang`. Kế hoạch chia **20 nhân viên/nhánh**, cần 299 yêu cầu/người để phát hiện chênh 6 điểm phần trăm. Có 4 luật dừng và 11 event. Trình lại sau kiểm thử an toàn, xác nhận đo thời gian thực và chấp thuận mức power 0,64 nếu tác động thật chỉ +5 điểm. [Hồ sơ launch v0](ho_so_launch_v0.md)
 - Phản hồi duyệt chéo của hội đồng đối với Teamday14 sẽ được bổ sung sau buổi duyệt.
 
 ## 5. Khó khăn và cách xử lý

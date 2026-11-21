@@ -14,6 +14,6 @@ Mẫu chạy thử giả lập gồm **1.200 yêu cầu**, **1.624 lượt chạ
 | 6 · Kế hoạch pilot | Kế hoạch chia ngẫu nhiên **20 nhân viên/nhánh × 299 yêu cầu**, đủ phát hiện chênh 6 điểm phần trăm. Với chênh 5 điểm, power khoảng 0,64. Có 4 luật dừng, đọc kết quả ngày 13/01/2027 theo lịch đề xuất. [Kế hoạch pilot](pilot_plan.yaml) | Xong, có bằng chứng | Người phụ trách pilot |
 | 7 · Rủi ro kinh tế | Làm lại gấp đôi làm chi phí tăng **51,8%** (`simulated`). Xem lại 100% khi làm lại mất 15,3 phút/ca cho chi phí **12.415 đ/việc** và hòa vốn nếu thời gian xem lại ≤ **4,8 phút/ca** (`simulated`). | Giả lập | Người phụ trách chỉ số |
 
-Phạm vi đề xuất khi trình lại gồm `noi_dia` và `hang_nang`. `quoc_te` có chi phí **22.515 đ/việc thành công** (`simulated`) và `doi_tac` chỉ đạt **54,4%** thành công. Kế hoạch đo có 9 event nối bằng `trace_id`. [Đặc tả chỉ số](chi_so.md)
+Phạm vi đề xuất khi trình lại gồm `noi_dia` và `hang_nang`. `quoc_te` có chi phí **22.515 đ/việc thành công** (`simulated`) và `doi_tac` chỉ đạt **54,4%** thành công. Kế hoạch đo có 11 event nối bằng `trace_id`. [Đặc tả chỉ số](chi_so.md)
 
 **Đề xuất Gate 2a · No-go ở vòng này.** Trình lại khi có bằng chứng kiểm thử chống hoàn trùng (ca 20), đối soát lệnh thất bại (ca 7), xác nhận log đo chi phí thật và quyết định của Giám đốc vận hành về power 0,64 ở mức +5 điểm. Hoàn tất bằng chứng gắn nhãn độc lập của CP3 trước khi nộp.

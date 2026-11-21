@@ -11,8 +11,8 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
+|   1 |Trần Quốc Tuấn       |2A202603561      |trtuan.475@gmail.com       |trtuan475        |Nguời viết code        |
+|   2 | Nguyễn Thị Hải Yến | 2A202603567 |       | Jennguyen106 | Kiểm số, cỡ mẫu và chỉ số |
 |   3 | Bùi Mạnh Linh | 2A202603539 |       |        | Người gắn nhãn 1 |
 |   4 | Vũ Đức Thắng | 2A202603601 |       |        | Người gắn nhãn 2 kiêm giữ hồ sơ |
 
@@ -34,6 +34,38 @@ report/team/MSSV_HoTen.md
 ```
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
+
+## Trần Quốc Tuấn · 2A202603561
+
+### Phần việc phụ trách
+
+- Người viết code trước giờ giải lao (CP1, CP2): cài môi trường, viết và chạy `src/lab13.py` cho Nhiệm vụ A và B, in số để người kiểm số điền `bang_chi_phi.md`.
+
+### Đóng góp cụ thể
+
+- A1: ba hàm số lần chạy kỳ vọng, tỉ lệ thành công, hệ số chi phí (= 1/p); ba phép thử ĐẠT (1,20 · 1,25 · 1,25).
+- A2–A4: hàm `mo_hinh` (tử số tính mọi lần chạy, mẫu số chỉ đếm `thanh_cong`): 4.472 đ/việc thành công [simulated], gấp 16,3 lần hoá đơn token; tách theo loại (quoc_te 1,88×); cộng chi phí cố định cho noi_dia + hang_nang: 4.599 đ = 0,38× [simulated].
+- B1–B4: 9 kịch bản độ nhạy (làm lại +51,8% > xem lại +40,7% > lương +23,1%), cặp token + xem lại +46,3%, giới hạn 2 lần rẻ nhất cho cả hệ thống (6.901.220 đ), xem lại 100%: 0,98× [simulated].
+
+### Bằng chứng
+
+- [`src/lab13.py`](src/lab13.py), commit `785090b`, [báo cáo cá nhân](report/team/2A202603561_TranQuocTuan.md).
+
+## Nguyễn Thị Hải Yến · 2A202603567
+
+### Phần việc phụ trách
+
+- Người kiểm số: chạy `src/lab13.py`, đối chiếu đầu ra và điền `bang_chi_phi.md` (A, B) và `chi_so.md` (E1, E2).
+
+### Đóng góp cụ thể
+
+- `bang_chi_phi.md` A3–B4: `quoc_te` 1,88× baseline nên để ngoài phạm vi; chi phí cố định 0,38×–0,48×; giới hạn 2 lần rẻ nhất cho cả hệ thống (6.901.220 đ); xem lại 100% lên 0,98–1,03× [simulated].
+- `chi_so.md`: ba chỉ số chạy thử (82,83% · 27,12% · 4,25%), 2 chỉ số tự đề xuất, 8 event có `trace_id`, 4 rủi ro kinh tế.
+- Tính lại phần chi phí lần chạy 2–3 từ `logix_runs.csv` (93.804,488 đ) để chốt số đúng khi gộp xung đột.
+
+### Bằng chứng
+
+- Commit `83e3065`, `26cafa6`, `0d5b3a2`, [báo cáo cá nhân](report/team/2A202603567_NguyenThiHaiYen.md).
 
 ## Vũ Đức Thắng · 2A202603601
 

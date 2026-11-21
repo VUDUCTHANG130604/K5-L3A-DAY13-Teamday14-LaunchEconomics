@@ -13,7 +13,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |        |      |       |        |         |
 |   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
+|   3 | Bùi Mạnh Linh | 2A202603539 |       |        | Người gắn nhãn 1 |
 |   4 | Vũ Đức Thắng | 2A202603601 |       |        | Người gắn nhãn 2 kiêm giữ hồ sơ |
 
 Bốn vai của lab:
@@ -49,6 +49,20 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 ### Bằng chứng
 
 - [Báo cáo cá nhân](report/team/2A202603601_VuDucThang.md), [hồ sơ launch v0](report/team/ho_so_launch_v0.md) và [báo cáo nhóm](report/team/group_report.md).
+
+## Bùi Mạnh Linh · 2A202603539
+
+### Phần việc phụ trách
+
+- Người gắn nhãn 1: gắn nhãn 20 ca ở CP3, đối chiếu với người gắn nhãn 2, viết quy tắc cho ca lệch và bảng khắc phục 5 ca; phụ trách `phieu_cham.md` khi duyệt chéo.
+
+### Đóng góp cụ thể
+
+- Hai bộ nhãn trùng 17/20 (85%), quy tắc cho ca 8, 13, 17; bảng khắc phục 5 ca đủ năm loại; cập nhật mục 5 hồ sơ launch v0.
+
+### Bằng chứng
+
+- [Bảng lỗi](report/team/bang_loi.md), [báo cáo cá nhân](report/team/2A202603539_BuiManhLinh.md), commit `34ee7b4`.
 
 Sao chép mục dưới đây cho từng thành viên.
 

@@ -4,9 +4,9 @@
 
 ## Bảng đối chiếu nhãn
 
-Người gắn nhãn 1: ... · Người gắn nhãn 2: Vũ Đức Thắng.
+Người gắn nhãn 1: Bùi Mạnh Linh · Người gắn nhãn 2: Vũ Đức Thắng (gắn riêng, không trao đổi trước khi so)
 
-| Ca | Nhãn người 1 | Nhãn người 2 (AI đề xuất) | Trùng? | Nhãn thống nhất (dự thảo) |
+| Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
 | 1 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 2 | Hệ thống | Hệ thống | Có | Hệ thống |
@@ -29,11 +29,13 @@ Người gắn nhãn 1: ... · Người gắn nhãn 2: Vũ Đức Thắng.
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Kết quả đối chiếu tham khảo:** Lệch ba ca **8, 13 và 17**. Số ca trùng là **17/20** ((20 − 3) ÷ 20 × 100% = **85%**). Tỉ lệ đồng thuận chính thức của CP3 cần hai bộ nhãn do hai thành viên tự thực hiện.
+**Tỉ lệ đồng thuận:** 17 / 20 = 85% (đạt ngưỡng 80%, không cần viết lại định nghĩa). Ba ca không trùng: **8, 13, 17**.
 
-## Đối chiếu với nhãn đề xuất của AI
+Cách gắn nhãn: cả hai người đều dùng AI hỗ trợ (người 1 dùng Claude, người 2 dùng ChatGPT), đã ghi rõ ở báo cáo cá nhân. Đối chiếu nhãn thống nhất với bảng tham khảo trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md`: khớp 20/20.
 
-AI đề xuất cách phân loại theo mô tả trong phần “Hai mươi ca lỗi”. Ba ca lệch dùng cách diễn giải khác về nguyên nhân hoặc khả năng phát hiện lỗi. [Đề bài Lab 13](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx)
+## Căn cứ gắn nhãn từng ca
+
+Căn cứ theo mô tả trong phần “Hai mươi ca lỗi”. Ba ca lệch (8, 13, 17) do hai người diễn giải khác nhau về nguyên nhân gốc hoặc về việc lỗi đã lộ ra hay chưa. [Đề bài Lab 13](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx)
 
 | Ca | Căn cứ gắn nhãn |
 | --: | --- |
@@ -62,9 +64,9 @@ AI đề xuất cách phân loại theo mô tả trong phần “Hai mươi ca l
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-- **Ca 8** xếp vào **Hệ thống** vì việc viện dẫn điều khoản không tồn tại là lỗi trong câu trả lời dù số tiền hoàn đúng.
-- **Ca 13** xếp vào **Giới hạn hệ thống** vì yêu cầu hoàn phí bảo hiểm của đối tác nằm ngoài phạm vi xử lý của trợ lý.
-- **Ca 17** xếp vào **Ngầm** vì sai lệch nhỏ do dùng bảng giá cũ kéo dài trên 212 đơn trong 9 ngày mà không có ca nào mở lại.
+- **Ca 8 → Hệ thống, không phải Ngầm:** trích dẫn "Điều 7.2" hiện ngay trong tin nhắn gửi khách nên lỗi đã lộ ra; Ngầm chỉ dùng khi cả khách lẫn hệ thống không ai thấy cho tới lúc kiểm tra mẫu.
+- **Ca 13 → Giới hạn hệ thống, không phải Hệ thống:** nguyên nhân gốc là yêu cầu nằm ngoài phạm vi (phí bảo hiểm của đối tác); việc trợ lý không nói rõ mình không xử lý được là chỗ cần sửa, ghi ở cột khắc phục, không đổi nhãn.
+- **Ca 17 → Ngầm, không phải Hệ thống:** dù gốc là bộ nhớ đệm giữ bảng giá cũ, 212 đơn lệch trong 9 ngày mà không khách nào mở lại và không cảnh báo nào kích, nên tiêu chí "có người thấy" quyết định nhãn là Ngầm.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 

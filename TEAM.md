@@ -11,7 +11,7 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
+|   1 |Trần Quốc Tuấn       |2A202603561      |trtuan.475@gmail.com       |trtuan475        |Nguời viết code        |
 |   2 |   Nguyễn Thị Hải Yến     |    2A202603567  |       |        | Kiểm số , cỡ mẫu và chỉ số         |
 |   3 | Bùi Mạnh Linh | 2A202603539 |       |        | Người gắn nhãn 1 |
 |   4 | Vũ Đức Thắng | 2A202603601 |       |        | Người gắn nhãn 2 kiêm giữ hồ sơ |
@@ -34,6 +34,22 @@ report/team/MSSV_HoTen.md
 ```
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
+
+## Trần Quốc Tuấn · 2A202603561
+
+### Phần việc phụ trách
+
+- Người viết code trước giờ giải lao (CP1, CP2): cài môi trường, viết và chạy `src/lab13.py` cho Nhiệm vụ A và B, in số để người kiểm số điền `bang_chi_phi.md`.
+
+### Đóng góp cụ thể
+
+- A1: ba hàm số lần chạy kỳ vọng, tỉ lệ thành công, hệ số chi phí (= 1/p); ba phép thử ĐẠT (1,20 · 1,25 · 1,25).
+- A2–A4: hàm `mo_hinh` (tử số tính mọi lần chạy, mẫu số chỉ đếm `thanh_cong`): 4.472 đ/việc thành công [simulated], gấp 16,3 lần hoá đơn token; tách theo loại (quoc_te 1,88×); cộng chi phí cố định cho noi_dia + hang_nang: 4.599 đ = 0,38× [simulated].
+- B1–B4: 9 kịch bản độ nhạy (làm lại +51,8% > xem lại +40,7% > lương +23,1%), cặp token + xem lại +46,3%, giới hạn 2 lần rẻ nhất cho cả hệ thống (6.901.220 đ), xem lại 100%: 0,98× [simulated].
+
+### Bằng chứng
+
+- [`src/lab13.py`](src/lab13.py), commit `785090b`, [báo cáo cá nhân](report/team/2A202603561_TranQuocTuan.md).
 
 ## Vũ Đức Thắng · 2A202603601
 

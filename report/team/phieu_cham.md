@@ -2,25 +2,22 @@
 
 Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo bằng chứng trong hồ sơ, không theo cách trình bày: một đề xuất No-go có lý do bằng số được điểm cao hơn một đề xuất Go bỏ qua con số bất lợi.
 
-- Nhóm chấm (hội đồng): Stech (L3A)
-- Nhóm được chấm: Teamday14 (L3A) · repo `VUDUCTHANG130604/K5-L3A-DAY13-Teamday14-LaunchEconomics`, commit `ccfa5d9`
+- Nhóm chấm (hội đồng): Teamday14
+- Nhóm được chấm: HaiVaKhiem
 
 | Tiêu chí | 0 điểm | 5 điểm | 10 điểm | Điểm | Lý do (có số) |
 | --- | --- | --- | --- | ---: | --- |
-| Đề xuất khớp bằng chứng | Mâu thuẫn với số của chính nhóm | Khớp nhưng bỏ qua một con số bất lợi | Khớp, nêu cả con số bất lợi và cách xử lý | 10 | No-go khớp với số của nhóm và nêu đủ con số bất lợi: xem lại 100% lên 12.415 đ = 1,03× [simulated], power chỉ 0,64 nếu tác động thật +5 điểm, ca 20 hoàn trùng, ca 7 báo xong khi sổ cái lỗi. Mỗi con số có điều kiện xử lý để trình lại. |
-| Số giả lập và phạm vi | Không nhãn; phạm vi "mọi yêu cầu" | Có nhãn hoặc có thu hẹp phạm vi | Nhãn ở mọi số giả lập; phạm vi thu hẹp có lý do bằng số | 10 | Mọi số tính từ cột `_simulated` có nhãn (4.472 đ, 5.865 đ/yêu cầu, B1–B4). Phạm vi thu hẹp về `noi_dia` + `hang_nang` vì `quoc_te` 22.515 đ = 1,88× và `doi_tac` chỉ 54,4% thành công. |
-| Pilot ra được quyết định | Không đối chứng hoặc thiếu cỡ mẫu | Đủ cỡ mẫu, luật dừng chung chung | Tách được tác động, đủ mẫu, luật dừng có ngưỡng, thời hạn, người có quyền dừng | 10 | Đối chứng đồng thời 20 + 20 nhân viên, chia ngẫu nhiên theo tầng depot; 20 cụm × 299 yêu cầu, DE 6,96, n hiệu dụng 859 đủ phát hiện chênh 6 điểm. 4 luật dừng NẾU – TRONG – THÌ – KHÔNG THÌ có ngưỡng (hoàn trùng ≥ 1 đơn, mở lại > 6% hoặc +2 điểm trong 3 ngày, chi phí > 12.000 đ trong 2 tuần), thời hạn 30 phút và người dừng là Giám đốc vận hành. |
+| Đề xuất khớp bằng chứng | Mâu thuẫn với số của chính nhóm | Khớp nhưng bỏ qua một con số bất lợi | Khớp, nêu cả con số bất lợi và cách xử lý | 10/10 | Đề xuất Go có điều kiện, nêu chi phí 4.472 đ/việc (simulated), đồng thời thừa nhận xem lại 100% khiến chi phí lên 11.743–12.415 đ, tương đương 0,98–1,03 lần cách làm thủ công. Có phương án kiểm soát. |
+| Số giả lập và phạm vi | Không nhãn; phạm vi "mọi yêu cầu" | Có nhãn hoặc có thu hẹp phạm vi | Nhãn ở mọi số giả lập; phạm vi thu hẹp có lý do bằng số | 10/10 |Các số chi phí có nhãn simulated trong hồ sơ. Giới hạn pilot ở noi_dia (0,22×) và hang_nang (0,69×); loại quoc_te (1,88×, thành công 27,3%) và doi_tac (0,85×, có điều khoản riêng). |
+| Pilot ra được quyết định | Không đối chứng hoặc thiếu cỡ mẫu | Đủ cỡ mẫu, luật dừng chung chung | Tách được tác động, đủ mẫu, luật dừng có ngưỡng, thời hạn, người có quyền dừng | 10/10 | Thiết kế đối chứng 20+20 nhân viên, 859 mẫu hiệu dụng/nhóm, ít nhất 299 yêu cầu/người. Có 4 luật dừng với ngưỡng, thời gian và vai trò phụ trách; ngày quyết định dự kiến 05/01/2027. |
 | **Tổng** | | | | **30 / 30** | |
 
-**Quyết định của hội đồng:** Go có điều kiện
+**Quyết định của hội đồng:** Go · Go có điều kiện · No-go (giữ một)
 
-**Lý do:** Chi phí trong phạm vi chỉ 4.599 đ = 0,38× [simulated] (đã cộng cố định), kế hoạch pilot đủ 20 cụm mỗi nhánh và chấp nhận rõ mức chênh 6 điểm. Các lý do No-go của nhóm (khoá chống trùng ca 20, đối soát ca 7, log chi phí) đều làm được trước ngày mở quyền, nên đặt thành điều kiện bắt buộc trước 30/11/2026 thay vì dừng cả vòng. Điểm cần nhóm bổ sung: CP3 chưa có bằng chứng hai bộ nhãn độc lập (nhóm tự ghi trạng thái "Chưa"), nên tỉ lệ đồng thuận 85% chưa đủ tin cậy.
+**Lý do:** Nhóm đề xuất Go có điều kiện phù hợp với bằng chứng định lượng. Chi phí hệ thống là 5.865 đ/yêu cầu (simulated), thấp hơn mức thủ công 12.000 đ, nhưng nếu xem lại 100%, chi phí có thể đạt 12.415 đ/việc. Nhóm đã thu hẹp phạm vi pilot và thiết kế đối chứng 20+20 nhân viên, với 859 mẫu hiệu dụng mỗi nhóm.
 
-**Một câu hỏi cho đội trình:** Chi phí phạm vi chỉ 0,38× và pilot đã đủ 20 cụm mỗi nhánh; vì sao nhóm chọn No-go thay vì Go có điều kiện, với ca 20 và ca 7 là điều kiện phải xong trước ngày mở quyền?
+Trước khi triển khai, nhóm cần hoàn thiện kiểm soát hoàn tiền trùng, xác nhận phương án phân nhóm ngẫu nhiên và kiểm thử hệ thống ghi nhận sự kiện. Chỉ cho phép bắt đầu pilot khi các điều kiện an toàn và đo lường được đáp ứng.
 
-**Câu trả lời của đội trình (ghi lại tại buổi):**Nhóm lựa chọn No-go ở thời điểm Gate 2a vì hiệu quả kinh tế và cỡ mẫu mới chứng minh tính khả thi của pilot, chưa chứng minh hệ thống đủ an toàn để mở quyền.
-Dù chi phí chỉ bằng 0,38 lần phương án thủ công và thiết kế có 20 cụm mỗi nhánh, nhóm vẫn chưa có bằng chứng kiểm thử hoàn tất cho ca 20 (hoàn tiền trùng) và ca 7 (báo thành công khi ghi sổ cái thất bại).
+**Một câu hỏi cho đội trình:** Nhóm đặt luật dừng khi có từ 1 ca hoàn tiền trùng trong 3 ngày liên tiếp. Nếu ngay ngày đầu tiên đã phát hiện một ca hoàn trùng, tại sao hệ thống không dừng ngay để tránh phát sinh thiệt hại? Ai có quyền quyết định dừng và trong bao lâu?
 
-Nhóm không bác bỏ pilot mà tạm thời chưa phê duyệt triển khai. Khi hai lỗi được kiểm thử đạt, hệ thống ghi nhận chi phí thực tế được xác nhận và Giám đốc vận hành chấp thuận giới hạn power, nhóm sẽ trình lại để chuyển sang Go có điều kiện.
-
-Như vậy, No-go là quyết định kiểm soát rủi ro tại thời điểm đánh giá, không phải kết luận dự án không khả thi.
+**Câu trả lời của đội trình (ghi lại tại buổi):** ...

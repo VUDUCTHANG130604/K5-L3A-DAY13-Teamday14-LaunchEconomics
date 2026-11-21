@@ -18,4 +18,9 @@ Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo b
 
 **Một câu hỏi cho đội trình:** Chi phí phạm vi chỉ 0,38× và pilot đã đủ 20 cụm mỗi nhánh; vì sao nhóm chọn No-go thay vì Go có điều kiện, với ca 20 và ca 7 là điều kiện phải xong trước ngày mở quyền?
 
-**Câu trả lời của đội trình (ghi lại tại buổi):** ...
+**Câu trả lời của đội trình (ghi lại tại buổi):**Nhóm lựa chọn No-go ở thời điểm Gate 2a vì hiệu quả kinh tế và cỡ mẫu mới chứng minh tính khả thi của pilot, chưa chứng minh hệ thống đủ an toàn để mở quyền.
+Dù chi phí chỉ bằng 0,38 lần phương án thủ công và thiết kế có 20 cụm mỗi nhánh, nhóm vẫn chưa có bằng chứng kiểm thử hoàn tất cho ca 20 (hoàn tiền trùng) và ca 7 (báo thành công khi ghi sổ cái thất bại).
+
+Nhóm không bác bỏ pilot mà tạm thời chưa phê duyệt triển khai. Khi hai lỗi được kiểm thử đạt, hệ thống ghi nhận chi phí thực tế được xác nhận và Giám đốc vận hành chấp thuận giới hạn power, nhóm sẽ trình lại để chuyển sang Go có điều kiện.
+
+Như vậy, No-go là quyết định kiểm soát rủi ro tại thời điểm đánh giá, không phải kết luận dự án không khả thi.

@@ -5,14 +5,14 @@
 - Tên nhóm: Teamday14
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-Teamday14-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt:
+- URL repo, nhánh nộp, commit chốt: https://github.com/VUDUCTHANG130604/K5-L3A-DAY13-Teamday14-LaunchEconomics · `main` · (điền khi chốt)
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |Trần Quốc Tuấn       |2A202603561      |trtuan.475@gmail.com       |trtuan475        |Nguời viết code        |
-|   2 |   Nguyễn Thị Hải Yến     |    2A202603567  |       |        | Kiểm số , cỡ mẫu và chỉ số         |
+|   2 | Nguyễn Thị Hải Yến | 2A202603567 |       | Jennguyen106 | Kiểm số, cỡ mẫu và chỉ số |
 |   3 | Bùi Mạnh Linh | 2A202603539 |       |        | Người gắn nhãn 1 |
 |   4 | Vũ Đức Thắng | 2A202603601 |       |        | Người gắn nhãn 2 kiêm giữ hồ sơ |
 
@@ -50,6 +50,22 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 ### Bằng chứng
 
 - [`src/lab13.py`](src/lab13.py), commit `785090b`, [báo cáo cá nhân](report/team/2A202603561_TranQuocTuan.md).
+
+## Nguyễn Thị Hải Yến · 2A202603567
+
+### Phần việc phụ trách
+
+- Người kiểm số: chạy `src/lab13.py`, đối chiếu đầu ra và điền `bang_chi_phi.md` (A, B) và `chi_so.md` (E1, E2).
+
+### Đóng góp cụ thể
+
+- `bang_chi_phi.md` A3–B4: `quoc_te` 1,88× baseline nên để ngoài phạm vi; chi phí cố định 0,38×–0,48×; giới hạn 2 lần rẻ nhất cho cả hệ thống (6.901.220 đ); xem lại 100% lên 0,98–1,03× [simulated].
+- `chi_so.md`: ba chỉ số chạy thử (82,83% · 27,12% · 4,25%), 2 chỉ số tự đề xuất, 8 event có `trace_id`, 4 rủi ro kinh tế.
+- Tính lại phần chi phí lần chạy 2–3 từ `logix_runs.csv` (93.804,488 đ) để chốt số đúng khi gộp xung đột.
+
+### Bằng chứng
+
+- Commit `83e3065`, `26cafa6`, `0d5b3a2`, [báo cáo cá nhân](report/team/2A202603567_NguyenThiHaiYen.md).
 
 ## Vũ Đức Thắng · 2A202603601
 
